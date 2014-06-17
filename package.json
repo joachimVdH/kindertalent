@@ -1,0 +1,20 @@
+{
+  "name": "kindertalent.be",
+  "version": "0.0.1",
+  "description": "Website for Leonie Van Wissen",
+  "devDependencies": {
+    "grunt": "^0.4.3",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-watch": "^0.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joachimVdH/kindertalent.git"
+  },
+  "author": "Joachim Van der Hoeven",
+  "bugs": {
+    "url": "https://github.com/joachimVdH/kindertalent/issues"
+  },
+  "homepage": "http://kindertalent.be"
+}

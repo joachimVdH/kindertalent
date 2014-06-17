@@ -1,0 +1,113 @@
+$pesticide-debug: false;
+@import "pesticide";
+
+@import "normalize";
+/* @import "compass/css3/shared"; */
+/* @import "compass/css3/text-shadow"; */
+
+$leftColumnWith:5%;
+
+$colorBackground:#FAFAFA;
+$colorTurquoise:#43C6DB ;
+$colorFontText:#222222;
+
+$sizeSmartPhone:25em; 		// 400px
+$sizeSmallScreen:43.5em; 	// 696px
+$sizeNormalScreen:47em;		// 752px
+$sizeBigScreen:51.25;			// 820px
+
+//$fontHeader:Helvetica,sans-serif;
+//$fontBody: Helvetica,sans-serif;
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+html{
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+}
+
+body{
+  background-color: $colorBackground;  
+  //font-family: $fontBody;
+  color: $colorFontText;
+	font-size: 1em;
+}
+
+mobileonly{
+	display: none;
+}
+
+header{	
+	font-size: 4em;
+	height: 2.3em;
+	text-align: center;
+	background-color: $colorTurquoise;
+	h1 {
+		color: $colorBackground;
+	}
+}
+
+section{
+	padding: 2em;
+	> header {
+		background-color: $colorBackground;
+		color: $colorTurquoise;
+		text-align: left;
+		font-size: 2em;
+		height: 1.5em;
+	}
+}
+
+
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+nav{
+	margin-top: 4em;
+	padding: 0.2em;
+	text-align: center;
+}
+
+img{
+	border: none;
+	max-width: 100%;
+}
+
+iframe{ // gmap
+	margin: 0em;
+	height: 400px;
+	@media only screen AND (max-width: $sizeSmartPhone) {
+		height: 8em;
+	}	
+}
+
+@media only screen and (max-width: $sizeSmartPhone) {
+	mobileonly{
+		height: 1.7em;
+		display: block;
+		font-size: 1.0em;
+		font-weight: 300;
+		background-color: $colorTurquoise;
+		text-align: center;
+
+		a{
+			text-decoration: none;
+			color: white;
+			border: 1px solid white;	
+			padding-left: 0.3em;
+			padding-right: 0.3em;
+			padding-bottom: 0.1em;
+			margin-left: 0.2em;
+	  }
+  }
+} 
+
