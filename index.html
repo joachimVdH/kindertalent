@@ -15,8 +15,16 @@
 	  <meta name="google-site-verification" content="uNQITMtE0nRZKVo3gHha1rHRMvu6jUN8gcq0pLUSVkw" />
 
 	  <link rel="stylesheet" href="css/kt.css" />
-		<script src="js/kt.js" async></script>	  
-		
+	  <script>
+		  // Picture element HTML5 shiv
+		  document.createElement( "picture" );
+	  </script>
+	  <script src="js/kt.js" async></script>	  
+		<!--[if gte IE 9]
+		<style type="text/css">
+			.gradient { filter: none; }
+		</style>
+		<![endif]-->	
 	</head>
 	<body><span id="top" />
 		<mobileonly>
@@ -32,18 +40,23 @@
 			for (i=0; i<coded.length; i++) {if (key.indexOf(coded.charAt(i))==-1) {ltr = coded.charAt(i);link += (ltr);} else {ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;link += (key.charAt(ltr))}}document.write("<a href='mailto:"+link+"'>mail me</a>");}//-->
 			</script><noscript>Sorry, you need Javascript on to email me.</noscript>
 		</mobileonly>
-		<header>
+		<header class="gradient">
 			<h1>Kindertalent</h1>
+			<picture>
+				<source srcset="img/logoKinderTalent_sm.gif" media="(max-width: 550px)">
+				<source srcset="img/logoKinderTalent.gif" media="(min-width: 551px)">
+				<img srcset="img/logoKinderTalent.gif" alt="Kindertalent logo">
+			</picture>
 		</header>	
 		
 		<nav>
-			<a href="#kinderyoga">Kinderyoga</a>&nbsp;&nbsp;
-			<a href="#braingym">Braingym</a>&nbsp;&nbsp;
-			<a href="#beleefnamiddagen">Beleef namiddagen</a>&nbsp;&nbsp;
-			<a href="#coaching">Advies/coaching</a>&nbsp;&nbsp;
-			<a href="#Kindermeditatie">Kindermeditatie</a>&nbsp;&nbsp;
-			<a href="#waar">Waar en wanneer</a>&nbsp;&nbsp;
-			<a href="#contact">Contact</a>
+			<a href="#kinderyoga" class="button">Kinderyoga</a>&nbsp;&nbsp;
+			<a href="#braingym" class="button">Braingym</a>&nbsp;&nbsp;
+			<a href="#beleefnamiddagen" class="button">Beleef namiddagen</a>&nbsp;&nbsp;
+			<a href="#coaching" class="button">Advies/coaching</a>&nbsp;&nbsp;
+			<a href="#Kindermeditatie" class="button">Kindermeditatie</a>&nbsp;&nbsp;
+			<a href="#waar" class="button">Waar en wanneer</a>&nbsp;&nbsp;
+			<a href="#contact" class="button">Contact</a>
 		</nav>
 		
 		<section id="kinderyoga"> 
@@ -81,22 +94,21 @@ Een half uurtje rust inbouwen in je leven, met tips en kleine oefeningetjes voor
 		
 		<section id="waar">
 			<header>Waar en wanneer?</header>
-			<h3>Maandag</h3>
+			<h3>Maandag en Vrijdag</h3>
 			<ul>
 				<li>15.45 tot 16.45 uur: kinderyoga 6 tot 10 jaar  (max 15 kindjes), 10 lessenreeks voor 100 euro
 </li>
-				<li>17 tot 18 uur de 10 tot 12 jarigen. (max 12 kindjes), 10 lessenreeks voor euro
+				<li>17 tot 18 uur de 10 tot 12 jarigen. (max 12 kindjes), 10 lessenreeks voor 100 euro
 </li>
 			</ul>
 			Waar: Basischool GO De Spreeuwen, Battelsesteenweg 259, Mechelen
 			
 			<h3>Dinsdag</h3>    
-			Kinderyoga in basisschool de Shill, alleen toegankelijk voor Shill-Kindjes.
-			<h3>Woensdag</h3>  Beleef-namiddag in Koningsteen van 13.30 tot 17 uur, 35 euro per middag.
+			Kinderyoga in basisschool GO-Shil, alleen toegankelijk voor Shil-Kindjes.
 			<h3>Donderdag</h3> 
 			<ul>
 				<li>16 tot 17 uur kinderyoga 6 tot 10 jaar (max 15 kindjes), 10 lessenreeks voor 100 euro</li>
-				<li>17.15  tot 18.15uur de 10 tot 12 jarigen. (max 12 kindjes), 10 lessenreeks voor euro</li>
+				<li>17.15  tot 18.15uur de 10 tot 12 jarigen. (max 12 kindjes), 10 lessenreeks voor 100 euro</li>
 			</ul>
 			Waar: Charleroyhoeve, Lierbaan 16, Grimbergen
 		</section>
@@ -115,11 +127,17 @@ Een half uurtje rust inbouwen in je leven, met tips en kleine oefeningetjes voor
 					key = "l2vefm7aOSKHDEqkhNU9Qp1J6jXwdTYGZR0A4BsrIo3ibFyctLC8Mxg5zWVunP"
 					shift=coded.length
 					link=""
-					for (i=0; i<coded.length; i++) {if (key.indexOf(coded.charAt(i))==-1) {ltr = coded.charAt(i);link += (ltr);} else {ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;link += (key.charAt(ltr))}}document.write("<a href='mailto:"+link+"'>leonie . van . wissen @ telenet . be</a> (verwijder de spaties)");}//-->
+					for (i=0; i<coded.length; i++) {if (key.indexOf(coded.charAt(i))==-1) {ltr = coded.charAt(i);link += (ltr);} else {ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length;link += (key.charAt(ltr))}}document.write("<a href='mailto:"+link+"'>"+link+"</a>");}//-->
 					</script><noscript>Sorry, you need Javascript on to email me.</noscript>
 					
 		</section>	
 		
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-52054702-1', 'kindertalent.be');ga('send', 'pageview');</script>
+
+<!-- live reload - remove 4 production -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- If your web site is running on another server, you need to specify the IP address of your local computer instead: -->
+<!-- <script src="http://192.168.0.1:35729/livereload.js?snipver=1"></script> -->
+
 	</body>
 </html>

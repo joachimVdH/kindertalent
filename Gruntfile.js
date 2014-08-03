@@ -8,7 +8,7 @@ module.exports = function(grunt) {
     						separator: '\r\n'
     				},
     				dist: {
-    						src: ['js_src/jquery-2.1.1.min.js','js_src/smoothScroll.js'],
+    						src: ['js_src/jquery-2.1.1.min.js','js_src/picturefill.min.js','js_src/smoothScroll.js'],
     						dest: 'js/kt.js'
     				}
     		},
