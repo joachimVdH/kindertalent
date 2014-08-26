@@ -23,6 +23,15 @@ module.exports = function(grunt) {
     				}
     		},
     		
+    		autoprefixer: {
+    			options: {
+    				// Task-specific options go here.
+    			},
+    			your_target: {
+    				// Target-specific file lists and/or options go here.
+    			},
+    		},
+    		
 		compass: {
 			dist:{
 				options: {
@@ -58,6 +67,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 
 	grunt.registerTask('default', 'watch');
 

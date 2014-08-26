@@ -1,3 +1,4 @@
 Kindertalent
 ============
-Website of Kindertalent.be
+
+Website of [Kindertalent.be](http://kindertalent.be)

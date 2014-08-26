@@ -13,13 +13,14 @@ $colorBackground:rgb(28, 111, 149);// #FAFAFA;
 $colorTurquoise:#43C6DB ;
 $colorFontText:#FAFAFA; //#222222;
 
+
 $sizeSmartPhone:25em; 		// 400px
 $sizeSmallScreen:43.5em; 	// 696px
 $sizeNormalScreen:47em;		// 752px
 $sizeBigScreen:51.25;			// 820px
 
-//$fontHeader:Helvetica,sans-serif;
-//$fontBody: Helvetica,sans-serif;
+$fontHeader:'Love Ya Like A Sister';
+$fontBody: sans-serif;
 
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {
@@ -32,11 +33,12 @@ html{
   overflow-y: scroll;
   text-size-adjust: 100%;
   	font-size: 18px;
+  	font-family: $fontBody;
   
   @media (max-width: 900px) {
   		html { font-size: 16px; }
   }
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
   		html { font-size: 14px; }
   }
 }
@@ -53,20 +55,32 @@ mobileonly{
 }
 
 header{	
+	font-family: $fontHeader;
 	//height: 2.3rem;
 	text-align: center;
 	//background-color: $colorTurquoise;
 	
 	
 	h1 {
-				font-size: 5rem;
-				color: $colorBackground;
-				margin: 0px;
-		}
+			font-size: 5rem;
+			color: $colorBackground;
+			margin: 0px;
+	}
 	@media (max-width: 320px) {
-			h1 { 
-					font-size: 2.8rem; 
-				}
+		h1 { 
+				font-size: 2.6rem; 
+		}
+	}
+	@media (min-width:321px) and (max-width: 420px) {
+		h1 { 
+				font-size: 3rem; 
+		}
+	}
+	
+	@media (min-width:421px) and (max-width: 550px) {
+		h1 { 
+				font-size: 4.0rem; 
+		}
 	}
 }
 
@@ -87,11 +101,20 @@ section{
 	> header {
 		padding-left: 0.3em;
 		padding-right: 0.3em;
-		background-color: $colorFontText;
-		color: $colorTurquoise;
+		background-color: rgba(161, 230, 212, 1.000) ; //rgba(255, 255, 255, 0.700) ;
+		color: $colorBackground;
 		text-align: left;
-		font-size: 2em;
-		height: 1.5em;
+		font-size: 2rem;
+		height: 1.3em;
+		-webkit-border-radius: .2em; 
+		-moz-border-radius: .2em;
+		border-radius: .2em;
+	}
+	
+	@media (max-width: 320px) {
+		> header { 
+				font-size: 1.6rem; 
+		}
 	}
 }
 
