@@ -1,4 +1,4 @@
-$pesticide-debug: FALSE;
+$pesticide-debug:false;
 @import "pesticide";
 
 @import "normalize";
@@ -97,7 +97,7 @@ header{
 
 section{
 	padding: 1em;
-	//background-color: $colorBackground;
+	
 	> header {
 		padding-left: 0.3em;
 		padding-right: 0.3em;
@@ -106,15 +106,21 @@ section{
 		text-align: left;
 		font-size: 2rem;
 		height: 1.3em;
-		-webkit-border-radius: .2em; 
-		-moz-border-radius: .2em;
-		border-radius: .2em;
+		// -webkit-border-radius: 0.2em; 
+		// -moz-border-radius: 0.2em;
+		border-radius: 0.2em;
 	}
 	
 	@media (max-width: 320px) {
 		> header { 
 				font-size: 1.6rem; 
 		}
+	}
+	img{
+		margin-top: 0.5em;
+		margin-left: 0.5em;
+		border-radius: 0.4em;
+		float: right;
 	}
 }
 
