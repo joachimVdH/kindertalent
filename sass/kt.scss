@@ -122,8 +122,21 @@ section{
 		border-radius: 0.4em;
 		float: right;
 	}
+
 }
 
+// youtube embed in the center
+#school{
+  padding-left:0em;
+  padding-right: 0em; 
+  text-align: center;
+  @media (max-width: 580px) {
+	  iframe{
+		  width: 320px;
+		  height: 180px
+	  }
+  }
+}
 
 a{
 	color: white;
